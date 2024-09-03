@@ -1,0 +1,145 @@
+.navbar{
+    width: 100%;
+    
+
+  
+    padding:4rem 6rem ;
+
+    
+    
+
+    
+}
+.navbar__contents{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  
+
+    
+    
+
+}
+.navbar__contents-logo{
+    border-left: solid .5px gray;
+    padding-left: 1rem;
+}
+.navbar__contents-logo h1{
+    color: var(--color-heading);
+    font-family: var(--font-family);
+    font-size: 23px;
+    opacity: 65%;
+}
+.navbar__contents-links{
+    display: flex;
+
+}
+.x img{
+    width: 35px;
+    margin-left: 2rem;
+    opacity: 50%;
+    transition:all .2s;
+}
+.x img:hover{
+    transform: scale(1.2);
+    opacity: 70%;
+}
+.navbar__contents-links a{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 35px;
+    text-transform: capitalize;
+
+    color: rgb(117, 116, 116);
+    max-width: 940px;
+
+    margin: 0 1rem;
+    cursor: pointer;
+   
+    font-family: var(--font-family);
+    transition: all .5s;
+}
+.navbar__contents-links a:hover{
+   color: rgb(65, 65, 65);
+   
+   text-decoration: underline;
+   text-underline-offset: 6px;
+   text-decoration-thickness: .5px;
+   text-decoration-color: rgb(149, 149, 149);
+   
+}
+.close img{
+    width: 33px;
+    opacity: 50%;
+    transition: all .3s;
+}
+.close img:hover{
+    transform: scale(1.2);
+    opacity: 70%;
+}
+.close{
+    display: none;
+}
+.menu2{
+    display: none;
+}
+
+@media screen and (max-width: 820px) {
+   .navbar {
+        padding: 2rem 4rem;
+        
+    }
+    .navbar__contents-links_link{
+        display: none;
+    }
+    .close{
+        display: block;
+    }
+
+    .menu2{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        
+       
+         
+        text-align: end;
+        padding: 2rem;
+        position: absolute;
+        top: 40px;
+        right: 60px;
+        margin-top: 3rem;
+        min-width: 210px;
+        border-radius: 20px;
+
+        background-color: whitesmoke;
+        box-shadow: 0 0 50px #fcfcfc,
+                    0 0 50px #fcfcfc ;
+
+    }
+   .menu a{ 
+        font-size: 20px;
+        font-weight: 800;
+        
+   }
+   .menu a:hover{
+    text-decoration: none;
+   }
+   
+}
+
+@media screen and (max-width: 550px) {
+    .navbar {
+        padding: 1rem;
+       
+    }
+    .menu2{
+        top: 20px;
+        right: 20px;
+
+        min-width: 150px;
+    }
+
+
+    
+}
